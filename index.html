@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bibi CamCam</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1> Les Bibis de CamCam</h1>
+    </div>
+    
+    <div class="contenair">
+
+        <div id="date1">
+            <label for="date">Date & heure:</label>
+            <input type="datetime-local" id="inputDate" name="date" required>
+        </div>
+        <div id="quantity">
+            <label for="quantity">Quantité:</label>
+            <input type="number" id="inputQty" name="quantity" placeholder="en ml" min="0" required>
+        </div>
+        <div id="submit">
+            <input type="submit" id="inputSubmit" value="Ajouter">
+        </div>
+            
+        
+
+        <div class="tableau">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ses derniers bibis:</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
